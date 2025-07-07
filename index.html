@@ -2,6 +2,16 @@
 <html lang="pt-BR">
 <head>
     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YBE605L70"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-4YBE605L70');
+    </script>
+    
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16732054879">
     </script>
     <script>
@@ -10,6 +20,26 @@
       gtag('js', new Date());
     
       gtag('config', 'AW-16732054879');
+    </script>
+
+    <!-- Event snippet for Venda Kiwify - Ebook conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-16732054879/rh_nCLmc5NMaEN_Ku6o-',
+          'value': 0.0,
+          'currency': 'BRL',
+          'transaction_id': '',
+          'event_callback': callback
+      });
+      return false;
+    }
     </script>
 
     <!-- Event snippet for Subscribe conversion page -->
